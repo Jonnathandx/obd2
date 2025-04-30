@@ -1,10 +1,9 @@
-# Análisis de datos OBD-II desde archivo .ASC
+# Análisis de datos OBD-II desde archivo .MF4
 
 Este proyecto en Python permite analizar datos de diagnóstico automotriz capturados en formato `.asc` (trazas CAN) y graficar los parámetros clave del vehículo como RPM, velocidad, temperatura del motor y del aire de admisión.
 
 ## 📂 Archivo de entrada
-
-Se espera un archivo `.asc` generado por una herramienta de captura CAN (como Vector o herramientas compatibles). Este archivo debe contener tramas OBD-II con identificadores estándar (`7E8` como ID de respuesta).
+Se espera un archivo `.mf4` generado por una herramienta de captura CAN (como Vector o herramientas compatibles) para la convesión a `.asc`. Este último archivo debe contener tramas OBD-II con identificadores estándar (`7E8` como ID de respuesta).
 
 ## 📈 Parámetros analizados
 
@@ -23,8 +22,10 @@ Cada uno se grafica en una ventana independiente usando Matplotlib.
 
 - Python 3.x
 - `matplotlib`
+- `asammdf`
 
 Puedes instalar los requerimientos con:
 
 ```bash
-pip install matplotlib
+sudo apt install python3-matplot
+sudo apt install python3-asammdf
