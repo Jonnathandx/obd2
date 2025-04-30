@@ -14,6 +14,7 @@ El script extrae y grafica los siguientes PIDs (Parameter IDs) bajo el modo de d
 | 05   | Temperatura del refrigerante del motor      | °C             |
 | 0C   | Revoluciones por minuto (RPM)               | RPM            |
 | 0D   | Velocidad del vehículo                      | km/h           |
+| 2F   | Nivel de combustible                        | %              |
 | 0F   | Temperatura del aire de admisión            | °C             |
 
 Cada uno se grafica en una ventana independiente usando Matplotlib.
